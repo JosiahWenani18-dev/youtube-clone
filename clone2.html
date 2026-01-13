@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube by Josiah</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style>
+
+    body{
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      padding-top: 55px;
+    }
+
+    .header{
+      height: 55px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: white;
+    }
+
+    .left-section{
+      display: flex;
+      align-items: center;
+    }
+
+    .hamburger-menu{
+      height: 20px;
+      margin: 0px 24px;
+    }
+
+    .youtube-logo{
+      height: 20px;
+    }
+
+    .middle-section{
+      display: flex;
+      flex: 1;
+      align-items: center;
+      margin-left: 70px;
+      margin-right: 35px;
+    }
+
+    .search-bar{
+      flex: 1;
+      height: 36px;
+      padding-left: 12px;
+      font-size: 16px;
+      border: 1px solid rgb(161, 161, 161);
+      border-radius: 3px;
+      box-shadow: inset 1px 1px 1px rgba(175, 175, 175, 0.5);
+      width: 0;
+    }
+
+    .search-bar::placeholder{
+      font-size: 16px;
+    }
+
+    .search-button{
+      height: 36px;
+    }
+    .video-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 40px;
+    }
+
+    .video-preview{
+      margin-bottom: 16px;
+    }
+
+    .thumbnail-row{
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .video-time{
+      position: absolute;
+      bottom: 6px;
+      right: 10px;
+      background-color: black;
+      color: white;
+      padding: 4px;
+      font-size: 12px;
+    }
+    .thumbnails{
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .description-container{
+     display: grid;
+     grid-template-columns: 50px 1fr;
+    }
+
+    .video-title{
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .video-author{
+      margin-top: 0;
+      margin-bottom: 6px;
+      color: rgb(96, 96, 96);
+      font-size: 12px;
+    }
+
+    .video-stats{
+      margin-top: 0;
+      margin-bottom: 0;
+      color: rgb(96, 96, 96);
+      font-size: 12px;
+    }
+    .channel-pictures{
+      display: inline-block;
+      width: 36px;
+      vertical-align: top;
+    }
+
+    .video-description{
+      display: inline-block;
+    }
+
+    .profile-picture{
+      width: 100%;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+    </div>
+    <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button"><img src="icons/search.svg"></button>
+    </div>
+    <div>
+      right-section
+    </div>
+  </div>
+  <div class="video-grid">
+    <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+ 
+</body>
+</html>
