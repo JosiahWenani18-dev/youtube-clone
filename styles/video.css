@@ -26,6 +26,7 @@
 
     .thumbnail{
       width: 100%;
+      border-radius: 10px;
     }
     
     .channel-picture{
