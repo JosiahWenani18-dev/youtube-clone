@@ -10,6 +10,7 @@
     body{
       font-family: Roboto, Arial, Helvetica, sans-serif;
       padding-top: 55px;
+      padding-left: 72px;
     }
 
     .header{
@@ -20,8 +21,9 @@
       top: 0;
       left: 0;
       right: 0;
-      z-index: 100;
+      z-index: 200;
       background-color: white;
+      border-bottom: 1px solid gray;
     }
 
     .left-section{
@@ -161,6 +163,39 @@
      grid-template-columns: 50px 1fr;
     }
 
+    .sidebar{
+      position: fixed;
+      top: 55px;
+      bottom: 0;
+      left: 0;
+      width: 72px;
+      z-index: 100;
+      background-color: white;
+      padding-top: 5px;
+    }
+
+    .sidebar-link{
+      height: 74px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .sidebar-link:hover{
+      background-color: rgb(224, 224, 224);
+    }
+
+    .sidebar-link img{
+      height: 24px;
+      margin-bottom: 4px;
+    }
+
+    .sidebar-link div{
+      font-size: 10px;
+    }
+
     .video-title{
       margin-top: 0;
       margin-bottom: 6px;
@@ -217,8 +252,34 @@
       <img src="icons/notifications.svg" class="notifications">
       <div class="notifications-count">12</div>
       </div>
-      
       <img src="channel-pictures/my-channel.jpeg" class="my-channel">
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-link">
+    <img src="icons/home.svg">
+    <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+    <img src="icons/explore.svg">
+    <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+    <img src="icons/subscriptions.svg">
+    <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+    <img src="icons/originals.svg">
+    <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+    <img src="icons/youtube-music.svg">
+    <div>YouTubeMusic</div>
+    </div>
+    <div class="sidebar-link">
+    <img src="icons/library.svg">
+    <div>Library</div>
     </div>
   </div>
   <div class="video-grid">
