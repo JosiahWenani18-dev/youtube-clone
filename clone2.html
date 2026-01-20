@@ -5,234 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube by Josiah</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <style>
 
-    body{
-      font-family: Roboto, Arial, Helvetica, sans-serif;
-      padding-top: 55px;
-      padding-left: 72px;
-    }
-
-    .header{
-      height: 55px;
-      display: flex;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 200;
-      background-color: white;
-      border-bottom: 1px solid gray;
-    }
-
-    .left-section{
-      display: flex;
-      align-items: center;
-    }
-
-    .hamburger-menu{
-      height: 20px;
-      margin: 0px 24px;
-    }
-
-    .youtube-logo{
-      height: 20px;
-    }
-
-    .middle-section{
-      display: flex;
-      flex: 1;
-      align-items: center;
-      margin-left: 70px;
-      margin-right: 35px;
-      max-width: 500px;
-    }
-
-    .search-bar{
-      flex: 1;
-      height: 36px;
-      padding-left: 12px;
-      font-size: 16px;
-      border: 1px solid rgb(161, 161, 161);
-      border-radius: 3px;
-      box-shadow: inset 1px 1px 1px rgba(175, 175, 175, 0.5);
-      width: 0;
-    }
-
-    .search-bar::placeholder{
-      font-size: 16px;
-    }
-
-    .search-button{
-      height: 40px;
-      width: 63px;
-      margin-left: -2px;
-      background-color: rgb(245, 244, 244);
-      border: 1px solid rgb(194, 193, 193);
-      margin-right: 10px;
-    }
-
-    .search {
-      margin-top: 4px;
-      height: 30px;
-    }
-
-    .voice-search-btn {
-      height: 40px;
-      width: 40px;
-      border-radius: 20px;
-      border: none;
-      background-color: rgb(245, 244, 244);
-    }
-
-    .voice-search {
-      margin-top: 4px;
-      height: 20px;
-
-    }
-
-    .right-section {
-      display: flex;
-      align-items: center;
-    }
-
-    .upload-icon,
-    .youtube-apps,
-    .notifications,
-    .my-channel {
-      height: 30px;
-      width: 30px;
-    }
-
-    .youtube-apps {
-      margin: 0px 30px;
-    }
-
-    .my-channel {
-      margin: 0px 30px;
-    }
-
-    .notifications-container {
-      position: relative;
-    }
-    .notifications-count {
-      position: absolute;
-      top: -1px;
-      right: -1px;
-      background-color: rgb(204, 0, 0);
-      color: white;
-      border-radius: 50%;
-      font-size: 11px;
-      padding: 3px;
-    }
-
-    .video-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 16px;
-      row-gap: 40px;
-    }
-
-    .video-preview{
-      margin-bottom: 16px;
-    }
-
-    .thumbnail-row{
-      margin-bottom: 10px;
-      position: relative;
-    }
-
-    .video-time{
-      position: absolute;
-      bottom: 6px;
-      right: 10px;
-      background-color: black;
-      color: white;
-      padding: 4px;
-      font-size: 12px;
-    }
-    .thumbnails{
-      width: 100%;
-      cursor: pointer;
-      border-radius: 10px;
-    }
-
-    .description-container{
-     display: grid;
-     grid-template-columns: 50px 1fr;
-    }
-
-    .sidebar{
-      position: fixed;
-      top: 55px;
-      bottom: 0;
-      left: 0;
-      width: 72px;
-      z-index: 100;
-      background-color: white;
-      padding-top: 5px;
-    }
-
-    .sidebar-link{
-      height: 74px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .sidebar-link:hover{
-      background-color: rgb(224, 224, 224);
-    }
-
-    .sidebar-link img{
-      height: 24px;
-      margin-bottom: 4px;
-    }
-
-    .sidebar-link div{
-      font-size: 10px;
-    }
-
-    .video-title{
-      margin-top: 0;
-      margin-bottom: 6px;
-      font-weight: 500;
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    .video-author{
-      margin-top: 0;
-      margin-bottom: 6px;
-      color: rgb(96, 96, 96);
-      font-size: 12px;
-    }
-
-    .video-stats{
-      margin-top: 0;
-      margin-bottom: 0;
-      color: rgb(96, 96, 96);
-      font-size: 12px;
-    }
-    .channel-pictures{
-      display: inline-block;
-      width: 36px;
-      vertical-align: top;
-    }
-
-    .video-description{
-      display: inline-block;
-    }
-
-    .profile-picture{
-      width: 100%;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="clone2Styles/general.css">
+  <link rel="stylesheet" href="clone2Styles/header.css">
+  <link rel="stylesheet" href="clone2Styles/sidebar.css">
+  <link rel="stylesheet" href="clone2Styles/body.css">
 </head>
 <body>
   <div class="header">
@@ -285,7 +62,7 @@
   <div class="video-grid">
     <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/APIpythonCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -301,7 +78,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/cssFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -317,7 +94,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/javaScriptFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -333,7 +110,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/reactFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -349,7 +126,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/pythonIntro.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -365,7 +142,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/python1FullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -381,7 +158,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/edurakepythonFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -397,7 +174,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/broCodePythonFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -413,7 +190,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/mobileAppDevFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -429,7 +206,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/CFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -445,7 +222,7 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/c++FullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
@@ -461,7 +238,199 @@
   </div>
   <div class="video-preview"> 
     <div class="thumbnail-row">
-      <img class="thumbnails" src="thumbnails/thumbnail-1.webp">
+      <img class="thumbnails" src="thumbnails/c++PointersFullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/javaIntroFullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/javaFullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/java2FullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/broCodeJava.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/operatingSystemsFullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/linuxFullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/linux4EthicalHaking.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/primeCyberSecurityFullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/cyberSecurity.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/cyberSecurity2.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/cybersecurityFullCourse.avif">
+      <div class="video-time">14:20</div>
+    </div>
+    <div class="description-container">
+      <div class="channel-pictures">
+        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+      </div>
+      <div class="video-description">
+        <p class="video-title">Talking Tech with Google CEO Sunder Pichai!</p>
+        <p class="video-author">Marques Brownleee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="video-preview"> 
+    <div class="thumbnail-row">
+      <img class="thumbnails" src="thumbnails/penetrationTestingFullCourse.avif">
       <div class="video-time">14:20</div>
     </div>
     <div class="description-container">
